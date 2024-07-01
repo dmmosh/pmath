@@ -1,5 +1,6 @@
 import sys 
 import os
+from tkinter.filedialog import askopenfilename, asksaveasfilename
 import tkinter as tk
 from utils import *
 
@@ -9,7 +10,8 @@ r.grid_rowconfigure(0,minsize=400)
 r.grid_columnconfigure(1,minsize=400)
 
 
-menubar = tk.Menu(r)
+menubar = tk.Menu(r) # MENU BAR
+
 filemenu = tk.Menu(menubar, tearoff=0)
 filemenu.add_command(label="New", command=test)
 filemenu.add_command(label="Open", command=test)
